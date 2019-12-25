@@ -793,8 +793,8 @@ var options = {
                 roam:false,
                 itemStyle: {
                     normal: {
-                        areaColor: ['#122B5E'],
-                        borderColor: '#6AD5F7',
+                        areaColor: '#142987',
+                        borderColor: '#18E4EE',
                         shadowColor: 'rgba(0,54,255, 1)',
                         shadowBlur: 10,
                         // borderWidth:2,
