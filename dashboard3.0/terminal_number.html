@@ -530,10 +530,9 @@
                     });
                 }
                 function addMarkPoint(itemData){
-                    // var echarObj = that.allEchartObj["china_map"];
-                    // if(!echarObj){return;}
+
                     var option = that.myChartMap.getOption();
-                    option.series[1] = {
+                    option.series[2] = {
                         type: 'effectScatter',
                         coordinateSystem: 'geo',
                         data: itemData,

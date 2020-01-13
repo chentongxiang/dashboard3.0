@@ -209,7 +209,7 @@ var options = {
                 x:"3%",
                 y:"6%"
             },
-            color: [color[0]],
+            // color: [color[0]],
             tooltip : {
                 trigger: 'axis',
                 axisPointer : {            // 坐标轴指示器，坐标轴触发有效
@@ -293,7 +293,7 @@ var options = {
                                 }
                             },
                             // color:color[0]
-                            color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+                            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
                                 offset: 0,
                                 color: color[1] // 0% 处的颜色
                             }, {
@@ -623,9 +623,9 @@ var options = {
                 y:"6%"
             },
             legend: {
-                orient: 'vertical',
-                // x:"20%",
-                y: '85%',
+                orient: 'horizontal',
+                x:"65%",
+                y: '12%',
                 data:label,
                 textStyle: {
                     fontSize: num?num/this.rate:14,
@@ -633,7 +633,9 @@ var options = {
                     fontFamily: "Microsoft YaHei",
 
                 },
-                data:label
+                data:label,
+                itemWidth:num?num/this.rate*1.5:14,
+                itemHeight:num?num/this.rate:14,
             },
             tooltip : {
                 trigger: 'item',
@@ -650,15 +652,15 @@ var options = {
                         height: num?num/this.rate*2.5:30,
                     },
                     left: '46%',
-                    top: '43%'
+                    top: '45%'
                 }]
             },
             series : [
                 {
                     name: "",
                     type: 'pie',
-                    center : ['50%','50%'],
-                    radius: ['45%', '55%'],
+                    center : ['50%','55%'],
+                    radius: ['40%', '55%'],
                     label: {        //展示文本设置
                         normal: {
                             show: true,     //展示
@@ -796,8 +798,8 @@ var options = {
                         areaColor: '#142987',
                         borderColor: '#18E4EE',
                         shadowColor: 'rgba(0,54,255, 1)',
-                        shadowBlur: 10,
-                        // borderWidth:2,
+                        shadowBlur: 1,
+                        borderWidth:3,
                     },
                     emphasis: {
                         areaColor: '#d1d1d1'
@@ -809,20 +811,51 @@ var options = {
                 top: 'top',
                 min: 0,
                 max: 5,
-                seriesIndex: 0,
+                seriesIndex: 1,
                 calculable: true,
                 inRange: {
-                    color: ['#3DE7C9'] //热力点颜色
+                    color: ['#00ffff'] //热力点颜色
+                    // color: '#42a8ee' //热力点颜色
                 }
             },
             series : [
+                {
+                    type: 'map',
+                    map: 'china',
+                    // geoIndex: 1,
+                    // aspectScale: 0.75, //长宽比
+                    showLegendSymbol: false, // 存在legend时显示
+                    label: {
+                        normal: {
+                            show: false,
+                        },
+                        emphasis: {
+                            show: false,
+                            textStyle: {
+                                color: '#fff'
+                            }
+                        }
+                    },
+                    zoom: 1.2,
+                    roam: false,
+                    itemStyle: {
+                        normal: {
+                            areaColor: '#142987',
+                            borderColor: '#194697',
+                            borderWidth: 1
+                        },
+                        emphasis: {
+                            areaColor: '#01215c'
+                        }
+                    },
+                },
                 {
                     name: '终端数量',
                     type: 'heatmap',
                     coordinateSystem: 'geo',
                     data : data,
                     pointSize: num/this.rate/5,
-                    blurSize: num/this.rate/6,
+                    blurSize: num/this.rate/10,
                     markPoint: {//动态标记
                         large: true,//这个选项，悬浮自动失效
                         symbolSize:1,//闪烁点大小
@@ -837,7 +870,8 @@ var options = {
                         zlevel: 1,
                         data: [],
                     },
-                }
+                },
+
             ]
         }
         return option;
@@ -967,14 +1001,14 @@ var options = {
                             // barBorderRadius:"",
                         },
                         normal: {
-                            // barBorderRadius:"",
-                            // color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-                            //     offset: 0,
-                            //     color: color[1] // 0% 处的颜色
-                            // }, {
-                            //     offset: 1,
-                            //     color: color[0] // 100% 处的颜色
-                            // }], false),
+                            barBorderRadius:"",
+                            color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+                                offset: 0,
+                                color: color[1] // 0% 处的颜色
+                            }, {
+                                offset: 1,
+                                color: color[0] // 100% 处的颜色
+                            }], false),
                             label: {
                                 show: false,		//开启显示
                                 position: 'top',	//在上方显示

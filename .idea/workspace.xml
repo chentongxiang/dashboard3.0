@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fd4a4f7-35a3-4249-9179-55a5f2e2d334" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard3.0/ad_number.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/ad_number.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard3.0/css/ad_number.css" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/css/ad_number.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard3.0/css/ad_number.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/css/ad_number.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard3.0/css/ad_number.less" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/css/ad_number.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard3.0/images/border_new.png" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/images/border_new.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard3.0/images/terminal_title_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/images/terminal_title_bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard3.0/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard3.0/terminal_number.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard3.0/terminal_number.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,31 +21,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ad_number.html" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ad_number.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="234">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <file leaf-file-name="terminal_number.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard3.0/terminal_number.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="796" column="45" selection-start-line="796" selection-start-column="45" selection-end-line="796" selection-end-column="45" />
-              <folding>
-                <element signature="e#2112#6636#0" />
-                <element signature="e#6693#10943#0" />
-                <element signature="e#11020#14078#0" />
-                <element signature="e#14144#18344#0" />
-                <element signature="e#18409#20216#0" />
-                <element signature="e#20269#22916#0" />
-                <element signature="e#22972#25815#0" />
-                <element signature="e#28319#34424#0" />
-              </folding>
+            <state relative-caret-position="9612">
+              <caret line="534" column="35" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -53,11 +43,8 @@
       <file leaf-file-name="ad_number.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="316" column="63" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
-              <folding>
-                <element signature="e#4254#5298#0" />
-              </folding>
+            <state relative-caret-position="2484">
+              <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -65,8 +52,8 @@
       <file leaf-file-name="ad_number.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+            <state relative-caret-position="4104">
+              <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -77,13 +64,25 @@
     <findStrings>
       <find>data_</find>
       <find>history-text</find>
-      <find>data-box</find>
       <find>current-month-box</find>
       <find>current</find>
       <find>chart-bg-color</find>
       <find>#0E3163</find>
       <find>@chart-bg-color</find>
       <find>center-top</find>
+      <find>center-middle</find>
+      <find>noBgBarChart</find>
+      <find>normalBarChart</find>
+      <find>data-box</find>
+      <find>@chart-bg-border</find>
+      <find>stackedBarChart</find>
+      <find>pieChartOther</find>
+      <find>top_play_act</find>
+      <find>addMarkPoint</find>
+      <find>MarkPoint</find>
+      <find>myChartMap</find>
+      <find>getCurrentRoom</find>
+      <find>china_map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,9 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dashboard3.0/ad_number.html" />
         <option value="$PROJECT_DIR$/dashboard3.0/css/ad_number.less" />
+        <option value="$PROJECT_DIR$/dashboard3.0/terminal_number.html" />
         <option value="$PROJECT_DIR$/dashboard3.0/js/common.js" />
+        <option value="$PROJECT_DIR$/dashboard3.0/ad_number.html" />
       </list>
     </option>
   </component>
@@ -108,8 +108,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="171" />
-    <option name="y" value="99" />
+    <option name="x" value="351" />
     <option name="width" value="1578" />
     <option name="height" value="690" />
   </component>
@@ -119,7 +118,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,21 +130,16 @@
               <item name="dashboard3.0" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard3.0" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dashboard3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dashboard3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gittest1/dashboard2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gittest1/dashboardAdv" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -174,33 +167,39 @@
       <option name="presentableId" value="Default" />
       <updated>1577238603528</updated>
       <workItem from="1577238606668" duration="14209000" />
+      <workItem from="1577325765840" duration="20390000" />
+      <workItem from="1577409725966" duration="737000" />
+      <workItem from="1577496427424" duration="16011000" />
+      <workItem from="1577668330311" duration="602000" />
+      <workItem from="1577760381671" duration="1213000" />
+      <workItem from="1577928725403" duration="655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14209000" />
+    <option name="totallyTimeSpent" value="53817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15534739" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16081187" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
-      <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,47 +209,277 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+        <state relative-caret-position="3510">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard3.0/images/border_new1.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/terminal_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9612">
+          <caret line="534" column="35" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="316" column="63" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/terminal_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9612">
+          <caret line="534" column="35" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="816" column="36" selection-start-line="816" selection-start-column="36" selection-end-line="816" selection-end-column="36" />
           <folding>
-            <element signature="e#4254#5298#0" />
+            <element signature="e#2112#6636#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/terminal_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9612">
+          <caret line="534" column="35" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="816" column="36" selection-start-line="816" selection-start-column="36" selection-end-line="816" selection-end-column="36" />
+          <folding>
+            <element signature="e#2112#6636#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5004">
+          <caret line="278" column="46" selection-start-line="278" selection-start-column="39" selection-end-line="278" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11772">
+          <caret line="654" column="30" selection-start-line="654" selection-start-column="30" selection-end-line="654" selection-end-column="30" />
+          <folding>
+            <element signature="e#2112#6636#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="5004">
+          <caret line="278" column="46" selection-start-line="278" selection-start-column="39" selection-end-line="278" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="11772">
+          <caret line="654" column="30" lean-forward="true" selection-start-line="654" selection-start-column="30" selection-end-line="654" selection-end-column="30" />
+          <folding>
+            <element signature="e#2112#6636#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5688">
+          <caret line="316" column="63" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4086">
+          <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1854">
           <caret line="796" column="45" selection-start-line="796" selection-start-column="45" selection-end-line="796" selection-end-column="45" />
           <folding>
             <element signature="e#2112#6636#0" />
-            <element signature="e#6693#10943#0" />
-            <element signature="e#11020#14078#0" />
-            <element signature="e#14144#18344#0" />
-            <element signature="e#18409#20216#0" />
-            <element signature="e#20269#22916#0" />
-            <element signature="e#22972#25815#0" />
-            <element signature="e#28319#34424#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/images/border_new1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/terminal_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9612">
+          <caret line="534" column="35" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="816" column="36" selection-start-line="816" selection-start-column="36" selection-end-line="816" selection-end-column="36" />
+          <folding>
+            <element signature="e#2112#6636#0" />
+            <element signature="e#6693#10946#0" />
+            <element signature="e#11023#14081#0" />
+            <element signature="e#14147#18347#0" />
+            <element signature="e#18412#20219#0" />
+            <element signature="e#20272#23020#0" />
+            <element signature="e#23076#25919#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/css/ad_number.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard3.0/ad_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
         </state>
       </provider>
     </entry>
