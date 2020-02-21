@@ -62,31 +62,34 @@
             </div>
         </div>
         <div class="center-box">
-            <div class="center-top">
-                <div class="text">当日实时数据采集量</div>
-                <div class="real-time-data" id="termNumCounter">数据加载中</div>
-                <input type='hidden' name="fixedTersnum" id="fixedTersnum" value="13048803"/>
-            </div>
-            <div class="center-four-data">
-                <div class="online-rate">
-                    <div class="num-text">平均在线率</div>
-                    <div class="num-data" id="avg_online_rate">55%</div>
+            <div class="center-top-box">
+                <div class="center-top">
+                    <div class="text">当日实时数据采集量</div>
+                    <div class="real-time-data" id="termNumCounter">数据加载中</div>
+                    <input type='hidden' name="fixedTersnum" id="fixedTersnum" value="13048803"/>
                 </div>
-                <div class="boot-times">
-                    <div class="num-text">平均每日开机次数</div>
-                    <div class="num-data" id="avg_opennum_everyday">331079</div>
-                </div>
-                <div class="active-terminal">
-                    <div class="num-text">平均活跃终端数</div>
-                    <div class="num-data" id="avg_termialnum_active">61285</div>
-                </div>
-                <div class="turn-on-time">
-                    <div class="num-text">平均每日开机时长(分钟)</div>
-                    <div class="num-data" id="avg_openlong_yesterday">12965101</div>
+                <div class="center-four-data">
+                    <div class="online-rate">
+                        <div class="num-text">平均在线率</div>
+                        <div class="num-data1" id="avg_online_rate">55%</div>
+                    </div>
+                    <div class="boot-times">
+                        <div class="num-text">平均每日开机次数</div>
+                        <div class="num-data2" id="avg_opennum_everyday">331079</div>
+                    </div>
+                    <!-- <div class="active-terminal">
+                        <div class="num-text">平均活跃终端数</div>
+                        <div class="num-data" id="avg_termialnum_active">61285</div>
+                    </div> -->
+                    <div class="turn-on-time">
+                        <div class="num-text">平均每日开机时长</div>
+                        <div class="num-data3" id="avg_openlong_yesterday">12965101</div>
+                    </div>
                 </div>
             </div>
             <div class="center-middle" id="china_map"></div>
             <div class="center-bottom">
+                <div class="empty"></div>
                 <!--<div class="new-text">最新动态</div>-->
                 <div class="bg-image">
                     <ul class="new-data" id="scroll_hotels"></ul>
@@ -99,10 +102,10 @@
                     <div>客房涵盖数量</div>
                     <div class="num-text" id="coveredRooms">76534</div>
                 </div>
-                <div class="middle">
+                <!-- <div class="middle">
                     <div>活跃终端数量</div>
                     <div class="num-text" id="yesterday_termialnum_active">8934</div>
-                </div>
+                </div> -->
                 <div class="right">
                     <div>酒店覆盖数量</div>
                     <div class="num-text" id="coveredHotels">33695</div>
@@ -114,20 +117,14 @@
     </div>
 
 </div>
-
-<!--<script src="http://cdn.wonko.com/lazyload/1.0.4/lazyload-min.js"></script>-->
-<script src="js/lazyload.js"></script>
-
-<!--<script src="js/jquery.js"></script>-->
-<!--<script src="js/echarts.min.js"></script>-->
-<!--<script src="js/echarts-gl.min.js"></script>-->
-<!--<script src="js/china.js"></script>-->
-<!--<script src="js/swiper.min.js"></script>-->
-<!--<script src="js/common.js"></script>-->
-<!--<script src="js/jquery.cookie.js"></script>-->
-
+<script src="js/jquery.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/echarts-gl.min.js"></script>
+<script src="js/china.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/common_terminal.js"></script>
+<script src="js/jquery.cookie.js"></script>
 <script>
-    function loadComplete(){
 
         var terminalNumber = {
             fontSizeNum : 18,
@@ -167,6 +164,9 @@
                     that.fontSizeNum=document.documentElement.clientWidth/1920 * 100;
                     //将得到的rem值复制给根元素的font-size
                     document.documentElement.style.fontSize=that.fontSizeNum+"px";
+                    //  that.fontSizeNum = 1920 / 1920 * 100;
+                    // //将得到的rem值复制给根元素的font-size
+                    // document.documentElement.style.fontSize = that.fontSizeNum + "px";
                 }
 
             },
@@ -197,6 +197,7 @@
                                     v.label.reverse();
                                     var option = options.stackedBarChart(color,v.label,v.value,that.fontSizeNum);
                                     option.title.text = "电影热播TOP5";
+                                    option.series[0]["barWidth"] ='25%',
                                     option.series[0]["itemStyle"] = {
                                         normal: {
                                             barBorderRadius:6,
@@ -210,7 +211,9 @@
                                             },
                                         }
                                     };
+                                    option.series[1]["barWidth"] ='25%',
                                     option.series[1]["itemStyle"] = {
+                                        barWidth: '30%',
                                         normal: {
                                             barBorderRadius:6,
                                             label: {
@@ -225,7 +228,7 @@
                                     }
                                     break;
                                 case "avg_single_open_long":
-                                    var color =["#1B69FF","#1B69FF"];
+                                    var color =["#2ec1c7","#0c77e1"];
                                     var option = options.normalBarChart(color,v.label,v.value,that.fontSizeNum);
                                     option.xAxis[0].axisLabel.interval = 1 ;
                                     // option.xAxis[0].name = "时段"
@@ -235,7 +238,8 @@
                                     option.title.text = "平均各时段驻留时长(小时)";
                                     break;
                                 case "avg_single_open_nums":
-                                    var color =["#01AFF3","rgba(1,175,243,.6)","rgba(1,175,243,.1)"];
+                                    // var color =["#01AFF3","rgba(1,175,243,.6)","rgba(1,175,243,.1)"];
+                                    var color =["#01AFF3","#25e5f9","rgba(1,175,243,.1)"];
                                     var option = options.lineChart(color,v.label,v.value,that.fontSizeNum);
                                     option.title.text = "单店平均各时段开机数量(个数)";
                                     // option.xAxis[0].name = "时段"
@@ -254,7 +258,7 @@
                                     option.title.text = "各省终端排行TOP5";
                                     break;
                                 case "top_city_view":
-                                    var color =["#1B69FF","#1B69FF","#1B69FF"];
+                                    var color =["#94e687","#27d8b7","#1B69FF"];
                                     v.value.reverse();
                                     v.label.reverse();
                                     var option = options.noBgBarChart(color,v.label,v.value,that.fontSizeNum);
@@ -272,12 +276,12 @@
                         var domIdArr1 = ["dom7","dom8","dom9","dom10","dom11","dom12"];
                         var domIdArr2 = ["dom1","dom2","dom3","dom4","dom5","dom6"];
                         var colorArr1 =  [
-                            ["#67E0E3","#26466D"],
-                            ["#6AB0B8","#26466D"],
-                            ["#DB9968","#26466D"],
-                            ["#7952E7","#26466D"],
-                            ["#1FCF25","#26466D"],
-                            ["#CF581F","#26466D"],
+                            ["#35bfde","#26466D"],
+                            ["#07e9be","#26466D"],
+                            ["#f7eb5f","#26466D"],
+                            ["#feab67","#26466D"],
+                            ["#db6c74","#26466D"],
+                            ["#ab90df","#26466D"],
                         ];
                         var pieData2 = contentOne.slice(0,6);
                         var pieData1 = contentOne.reverse().slice(0,6);
@@ -295,48 +299,6 @@
                         })
                     }
                 },"json");
-
-                //反转特效会导致echart图变模糊，未找到解决方法，改为轮播特效
-                // var n= 1;
-                // $chart1 = $(".carousel-chart1");
-                // $chart2 = $(".carousel-chart2");
-                // setInterval(function () {
-                //     if(n==1){
-                //         $chart1.removeClass("flipIn");
-                //         $chart2.removeClass("flipOut");
-                //         $chart1.addClass("flipOut");
-                //         $chart2.addClass('flipIn');
-                //         n=0;
-                //     }else{
-                //         $chart1.removeClass("flipOut");
-                //         $chart2.removeClass("flipIn");
-                //         $chart1.addClass("flipIn");
-                //         $chart2.addClass('flipOut');
-                //         n=1;
-                //     }
-                // }, 17000);
-                // //翻转2
-                //
-                // function timer1(){
-                //     $correct = $(".module-box-correct");
-                //     $opposite = $(".module-box-opposite");
-                //     $correct.removeClass("flipIn");
-                //     $opposite.removeClass("flipOut");
-                //     $correct.addClass("flipOut");
-                //     $opposite.addClass('flipIn');
-                //     setTimeout(timer2, 10000);
-                // }
-                // function timer2(){
-                //     $correct = $(".module-box-correct");
-                //     $opposite = $(".module-box-opposite");
-                //     $correct.removeClass("flipOut");
-                //     $opposite.removeClass("flipIn");
-                //     $correct.addClass("flipIn");
-                //     $opposite.addClass('flipOut');
-                //     setTimeout(timer1, 15000);
-                // }
-                // setTimeout(timer1, 15000);
-
                 var mySwiper = new Swiper ('.swiper1', {
                     // direction: 'vertical', // 垂直切换选项
                     direction: 'vertical', // 横向切换选项
@@ -386,7 +348,13 @@
                                 var minutes = 120;
                                 date.setTime(date.getTime()+(minutes * 60 * 1000));
                                 $.cookie('realTimeData', newNum,{expires: date});
-                                $('#termNumCounter').html(toThousands(newNum));
+                                var html="";
+                                var newNum_arr = newNum.toString().split("");
+                                $.each(newNum_arr,function(i,v){
+                                    html+="<div class='num_bg'>"+v+"</div>";
+                                })
+                                // console.log(html)
+                                $('#termNumCounter').html(html);
                             }
                         },"json");
                     }else{
@@ -400,7 +368,13 @@
                                 var minutes = 120;
                                 date.setTime(date.getTime()+(minutes * 60 * 1000));
                                 $.cookie('realTimeData', data.num, {expires: date});
-                                $('#termNumCounter').html(toThousands(data.num));
+                                var html="";
+                                var newNum_arr = newNum.toString().split("");
+                                $.each(newNum_arr,function(i,v){
+                                    html+="<div class='num_bg'>"+v+"</div>";
+                                })
+                                // console.log(html)
+                                $('#termNumCounter').html(html);
                             }
                         },function(err){
                             //错误的回调函数
@@ -536,7 +510,7 @@
                         type: 'effectScatter',
                         coordinateSystem: 'geo',
                         data: itemData,
-                        symbolSize:that.fontSizeNum?that.fontSizeNum/3.5:14,//闪烁点大小
+                        symbolSize:that.fontSizeNum?that.fontSizeNum/4.6:14,//闪烁点大小
                         showEffectOn: 'render',
                         rippleEffect: {
                             brushType: 'stroke'
@@ -575,11 +549,20 @@
                     dataType:"json"
                 }).then(function(data){
                     if(data){
+                        console.log(data)
                         var avg_online_rate = (data[5].value/data[12].value*100).toFixed(2)+"%";
                         $("#avg_online_rate").html(avg_online_rate);
                         $.each(data,function (i,v) {
+                            console.log(v)
                             if($("#"+v.label)){
-                                $("#"+v.label).html(parseInt(v.value));
+                                //判断是不是 平均每日开机时长，是的话加上MIN
+                                if(v.label=="avg_openlong_yesterday"){
+                                    var html= parseInt(v.value)+"<span class='minute'>Min</span>";
+                                    $("#"+v.label).html(html);
+                                }else{
+                                    $("#"+v.label).html(parseInt(v.value));
+                                }
+                                
                             }
                         })
                     }
@@ -602,25 +585,7 @@
         $(function() {
             terminalNumber.init();
         });
-    }
-    function loadscript(){
-        LazyLoad.js([
-
-            'js/jquery.js',
-            'js/echarts.min.js',
-            'js/echarts-gl.min.js',
-            'js/china.js',
-            'js/swiper.min.js',
-            'js/common.js',
-            'js/jquery.cookie.js',
-
-        ], loadComplete);
-
-    }
-
-    setTimeout(loadscript,10);
-
-
+    
 </script>
 </body>
 </html>
